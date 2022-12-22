@@ -1,0 +1,28 @@
+.home-container {
+  .filter-input-section {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    form {
+      width: 20rem;
+      .form-control {
+        background-color: transparent;
+        border-color: #007b7e;
+        color: #fff;
+        &:focus {
+          outline: none;
+          border-color: #007b7e;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .filtered-monsters-section {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+  }
+}

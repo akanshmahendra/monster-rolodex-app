@@ -1,1 +1,18 @@
-<p>home works!</p>
+<div class="home-container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1">
+      <div class="filter-input-section">
+        <form>
+          <input type="text" class="form-control" placeholder="Monster Name">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 offset-md-1">
+      <div class="filtered-monsters-section">
+        <app-monster-card *ngFor="let userData of usersData" [userDetails]="userData"></app-monster-card>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,13 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Bigelow Rules', cursive;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background-image: linear-gradient(to right top, #007b7e, #007b7e, #007b7e, #007b7e, #007b7e);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  min-height: 100vh;
+  max-width: 100vw;
+  background-image: linear-gradient(to right top, #007b7e, #00667c, #005076, #003969, #072155);
+  overflow-x: hidden;
 }

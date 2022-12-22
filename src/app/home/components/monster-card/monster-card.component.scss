@@ -1,0 +1,62 @@
+.monster-card {
+  position: relative;
+  width: 19.875rem;
+  height: 11.875rem;
+  background-color: #95dada;
+  border-radius: 1.25rem;
+  box-shadow: 0 2.1875rem 5rem rgba(0, 0, 0, 0.15);
+  margin-bottom: 3rem;
+  transition: 0.5s;
+  .imgBox {
+    position: absolute;
+    left: 50%;
+    top: -3.125rem;
+    transform: translateX(-50%);
+    width: 9.375rem;
+    height: 9.375rem;
+    background-color: #fff;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.9375rem 3.125rem rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    transition: 0.5s;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .details {
+      padding: 0.5rem;
+      text-align: center;
+      width: 100%;
+      transition: 0.5s;
+      h2 {
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.2rem;
+        span {
+          font-size: 0.85rem;
+          font-weight: 400;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    .imgBox {
+      width: 10.725rem;
+      height: 10.725rem;
+    }
+  }
+}

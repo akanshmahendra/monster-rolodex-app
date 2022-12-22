@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { User } from 'src/app/shared/user.model';
 
 @Component({
   selector: 'app-monster-card',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MonsterCardComponent implements OnInit {
 
+  @Input() userDetails: User;
+
   constructor() { }
+
+  get monsterImg() {
+    return `https://robohash.org/${this.userDetails.id}?set=set2&size=180x180`;
+  }
 
   ngOnInit(): void {
   }
