@@ -1,0 +1,11 @@
+.app-container {
+  .app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    h2 {
+      font-size: 5rem;
+    }
+  }
+}
