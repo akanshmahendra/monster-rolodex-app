@@ -1,0 +1,39 @@
+.add-monster-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.875rem;
+  .inputBox {
+    position: relative;
+    width: 18.625rem;
+    input {
+      width: 100%;
+      padding: 0.625rem;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background-color: transparent;
+      border-radius: 0.3125rem;
+      outline: none;
+      color: #fff;
+      font-size: 1rem;
+      &:focus ~ span, &:valid ~ span {
+        color: #072256;
+        transform: translateX(0.625rem) translateY(-0.4375rem);
+        font-size: 0.85rem;
+        padding: 0 0.625rem;
+        background-color: #00dfc4;
+        border-radius: 0.3125rem;
+      }
+    }
+    span {
+      position: absolute;
+      left: 0;
+      padding: 0.625rem;
+      pointer-events: none;
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.25);
+      text-transform: uppercase;
+      transition: 0.5s;
+    }
+  }
+}

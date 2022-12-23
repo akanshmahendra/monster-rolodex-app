@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AddMonsterRoutingModule } from './add-monster-routing.module';
 import { AddMonsterComponent } from './add-monster.component';
@@ -11,7 +12,8 @@ import { AddMonsterComponent } from './add-monster.component';
   ],
   imports: [
     CommonModule,
-    AddMonsterRoutingModule
+    AddMonsterRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class AddMonsterModule { }
