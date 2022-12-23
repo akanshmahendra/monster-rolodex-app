@@ -1,0 +1,40 @@
+.monster-details-container {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  .left {
+    width: 35%;
+    background: linear-gradient(to right, #01a9ac, #01dfdf);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    img {
+      margin-bottom: 0.625rem;
+      width: 12.25rem;
+      height: 12.25rem;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+  }
+  .right {
+    width: 65%;
+    background-color: #fff;
+    padding: 2.25rem;
+    .info, .company {
+      margin-bottom: 1.5625rem;
+      h3 {
+        padding-bottom: 0.3125rem;
+        margin-bottom: 0.9375rem;
+        border-bottom: 1px solid #e0e0e0;
+        color: #353c4e;
+        text-transform: uppercase;
+        letter-spacing: 0.25rem;
+      }
+    }
+  }
+}
