@@ -1,7 +1,7 @@
 <div class="monster-details-container">
   <div class="left">
-    <img src="https://robohash.org/2?set=set2&size=180x180" alt="">
-    <h4>Akansh Mahendra</h4>
+    <img [src]="monsterImgUrl" alt="">
+    <h4>{{ userDetails.name }}</h4>
   </div>
   <div class="right">
     <div class="info">
@@ -9,11 +9,11 @@
       <div class="info-data">
         <div class="data">
           <h5>Email</h5>
-          <p>akanshmahendra@gmail.com</p>
+          <p>{{ userDetails.email | customeLowercase }}</p>
         </div>
         <div class="data">
           <h5>Phone</h5>
-          <p>+91-7388049914</p>
+          <p>{{ userDetails.phone }}</p>
         </div>
       </div>
     </div>
@@ -22,11 +22,11 @@
       <div class="company-data">
         <div class="data">
           <h5>Name</h5>
-          <p>Romaguera-Cron</p>
+          <p>{{ userDetails.company.name }}</p>
         </div>
         <div class="data">
           <h5>Domains</h5>
-          <p>harness real-time e-markets</p>
+          <p>{{ userDetails.company.bs }}</p>
         </div>
       </div>
     </div>
